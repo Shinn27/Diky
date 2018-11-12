@@ -1,0 +1,31 @@
+public class Hp{
+	String Merk;
+	String Tipe;
+	int Harga;
+	String Warna;
+	public Hp(String Merk, String Tipe, int Harga, String Warna){
+		this.Merk = Merk;
+		this.Tipe = Tipe;
+		this.Harga = Harga;
+		this.Warna = Warna;
+}
+	public String getMerk(){
+	return Merk;
+}
+		public String getTipe(){
+	return Tipe;
+}	
+	public int getHarga(){
+	return Harga;
+}
+	public String getWarna(){
+	return Warna;
+}
+	public String toString(){
+	return("Merk HP : "+ this.getMerk()+ " \nTipe : "+ this.getTipe() + " \nHarga : " + this.getHarga() + " \nWarna : " + this.getWarna());
+}
+	public static void main(String[] args){
+	Hp Asus = new Hp ("Asus","Zenfone Max",2000000,"Hitam");
+	System.out.println(Asus.toString());
+}
+}
